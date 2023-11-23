@@ -14,7 +14,7 @@ const App = () => {
   };
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center w-full'>
       <h1 className='bg-slate-800 w-full text-center p-5 text-white text-2xl font-bold' >Calendar App</h1>
       <Calendar events={events} onDateClick={handleDateClick} />
     </div>
