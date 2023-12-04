@@ -89,6 +89,7 @@ const Calendar = ({ events, onDateClick }) => {
           </div>
         ))}
       </div>
+
     </div>
   );
 };
