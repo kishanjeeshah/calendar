@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Calendar from './components/Calendar';
 
@@ -21,23 +20,11 @@ const App = () => {
 
   return (
     <div className='flex flex-col items-center w-full'>
-      <h1 className='bg-slate-800 w-full text-center p-5 text-white text-2xl font-bold' >Calendar App</h1>
-      
+      <h1 className='bg-slate-800 w-full text-center p-5 text-white text-2xl font-bold' >Calendar App</h1>   
 
-      <div >
-        {
-          visible && <Calendar events={events} onDateClick={handleDateClick}  />
-        }
-
+      <div>
+          <Calendar events={events} onDateClick={handleDateClick}  />
       </div>
-
-      <button onClick={handler}> Click me
-      </button>
-
-    <div>
-      {abc}
-    </div>
-
 
     </div>
   );
